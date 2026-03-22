@@ -11,6 +11,25 @@
     --font-main: 'Inter', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth; /* This gives you the beautiful gliding animation! */
+}
+
+body {
+    overflow-x: clip; /* 'clip' stops horizontal scroll WITHOUT breaking your sticky navbar! */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none; /* optional: removes underline */
+}
+
 /* --- RESET & BASE --- */
 * {
     margin: 0;
