@@ -25,9 +25,13 @@ body {
     box-sizing: border-box;
 }
 
-.logo a {
-  color: white;
-  text-decoration: none; /* optional: removes underline */
+.navbar .logo a {
+    color: var(--text-primary); /* Uses your nice off-white theme variable */
+    text-decoration: none;
+}
+
+.navbar .logo a:hover {
+    color: var(--text-muted); /* Optional: Gives it a subtle color change when hovered */
 }
 
 /* --- RESET & BASE --- */
