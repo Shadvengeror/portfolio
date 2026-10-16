@@ -3,249 +3,1146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kathan Parikh - Full-Stack Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=3">
+    <title>Kathan Parikh | CRM Administration, Workflow Automation & Full-Stack Development</title>
+    
+    <!-- SEO & Metadata -->
+    <meta name="description" content="Portfolio of Kathan Parikh — Computer Programming and Analysis professional specializing in CRM administration, Python & Google Apps Script workflow automation, application support, and full-stack software development in Toronto, Canada.">
+    <meta name="author" content="Kathan Parikh">
+    <meta property="og:title" content="Kathan Parikh | Portfolio">
+    <meta property="og:description" content="Building smarter workflows. Solving real technical problems. Computer Programming & Analysis professional based in Toronto, Canada.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shadvengeror.github.io/portfolio/">
+    <meta name="theme-color" content="#090d14">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css?v=4.0">
 </head>
 <body>
 
+    <!-- Accessible Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- STICKY NAVBAR -->
     <header class="navbar">
         <div class="container nav-container">
-            <div class="logo"><a href="">Kathan Parikh</a></div>
-            <nav>
-                <ul class="nav-links">
+            <div class="logo-group">
+                <a href="#top" class="logo-link" aria-label="Kathan Parikh home">
+                    <span class="logo-dot"></span>
+                    <span>Kathan Parikh</span>
+                </a>
+                <span class="status-badge" title="Open to technical opportunities">
+                    <span class="status-pulse"></span>
+                    <span>Available</span>
+                </span>
+            </div>
+
+            <nav aria-label="Main Navigation">
+                <ul class="nav-links" id="nav-menu">
                     <li><a href="#about">About</a></li>
-                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#capstone">Capstone</a></li>
+                    <li><a href="#education">Education</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li class="mobile-resume-btn">
+                        <a href="resume.html" class="btn btn-primary btn-sm" style="width: 100%;">View Resume</a>
+                    </li>
                 </ul>
             </nav>
+
+            <div class="nav-actions">
+                <a href="resume.html" class="btn btn-outline-accent btn-sm">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    Resume
+                </a>
+                <a href="#contact" class="btn btn-primary btn-sm">Let's Connect</a>
+            </div>
+
+            <button class="mobile-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
         </div>
     </header>
 
-    <main class="container">
-        
-        <section class="hero">
-            <div class="hero-content">
-                <h2 class="subtitle">Computer Programming & Analysis Student</h2>
-                <h1 class="title">Aspiring Full-Stack<br>Software Developer</h1>
-                <p class="hero-text">Passionate about bridging technical problem-solving with effective communication. I engineer scalable, user-centric web applications and thrive in collaborative, agile environments.</p>
-                <div class="hero-buttons">
-                    <a href="assets/Kathan_Parikh_Resume.pdf" target="_blank" class="btn btn-primary">View Resume</a>
-                    <a href="#projects" class="btn btn-secondary">View Work</a>
-                </div>
-            </div>
-            <div class="hero-stats card">
-                <h3>Quick Info</h3>
-                <ul>
-                    <li><strong>Location:</strong> Toronto, Ontario</li>
-                    <li><strong>Education:</strong> George Brown College</li>
-                    <li><strong>Focus:</strong> React, Node.js, Next.js</li>
-                    <li><strong>Email:</strong> kathanparikh0@gmail.com</li>
-                </ul>
-            </div>
-        </section>
+    <!-- MAIN CONTENT -->
+    <main id="main-content">
 
-        <section id="about" class="section">
-            <h2 class="section-title">About Me</h2>
-            <div class="grid grid-2">
-                <div class="card">
-                    <h3>Bio</h3>
-                    <p>I am Kathan Parikh, a dedicated Computer Programming and Analysis student at George Brown College in Toronto with a strong passion for Full-Stack Web Development. Through my academic coursework and capstone projects, I have developed a robust skill set in building end-to-end applications.</p>
-                    <p>My extensive background as an Academic Coordinator and Computer Science Tutor has honed my ability to break down complex technical problems, communicate effectively, and lead collaborative team efforts.</p>
-                </div>
-                <div class="card">
-                    <h3>Career Philosophy</h3>
-                    <p><em>"We are the facilitators of our own creative evolution." – Bill Hicks</em></p>
-                    <p>My journey from tutoring mathematics to building full-stack web applications has been a continuous process of facilitating my own technical growth. My goal is to continuously evolve as a Full-Stack Developer, bridging frontend interfaces and backend APIs to create seamless, intuitive, and highly functional digital experiences.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="resume" class="section">
-            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 2.5rem;">
-                <div>
-                    <h2 class="section-title" style="margin-bottom: 0;">Experience & Credentials</h2>
-                </div>
-                <a href="assets/Kathan_Parikh_Resume.pdf" target="_blank" class="btn btn-primary">Download Full Resume</a>
-            </div>
-            
-            <div class="grid grid-2">
-                <div class="card">
-                    <h3>Professional Experience</h3>
-                    <ul class="timeline">
-                        <li>
-                            <strong>Academic Coordinator</strong> | Citi College, Canada <em>(June 2025 - Present)</em>
-                            <p>Overseeing academic programming, implementing structured lesson plans, and adhering to educational best practices.</p>
-                        </li>
-                        <li>
-                            <strong>Computer Science Tutor</strong> | Bookish Tutors & ALS Tutoring <em>(May 2024 - Present)</em>
-                            <p>Leading group study sessions and mentoring students in programming and computer science principles.</p>
-                        </li>
-                        <li>
-                            <strong>IELTS & Math Tutor</strong> | Milestone & Freelance, India <em>(July 2022 - July 2023)</em>
-                            <p>Fostered strong relationships with students and parents while addressing diverse student needs and challenges.</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>Academic Credentials</h3>
-                    <ul class="timeline">
-                        <li>
-                            <strong>Advanced Diploma: Computer Programming & Analysis</strong>
-                            <p>George Brown College, Canada (Sept 2023 – Present)</p>
-                        </li>
-                    </ul>
-                    <br>
-                    <h3>Letter of Recommendation</h3>
-                    <blockquote class="recommendation">
-                        "Kathan completed the Technology Mathematics course with a total score of 100% (A+)... assisting me in the delivery of complex mathematical topics. I am thoroughly convinced Kathan would be a great addition."<br>
-                        <strong>– Zack Bajin, Professor, George Brown College</strong>
-                    </blockquote>
-                    <a href="assets/Letter_of_Recommendation_Bajin.pdf" target="_blank" class="link-text">View Full Letter &rarr;</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="section">
-            <h2 class="section-title">Academic Work Samples</h2>
-            <p class="section-subtitle">A showcase of backend services, full-stack applications, and OOP logic.</p>
-            
-            <div class="grid grid-3">
-                <div class="card project-card">
-                    <h3>Food Management API</h3>
-                    <p>A backend-focused RESTful API system for managing recipes, grocery items, and minimizing food wastage.</p>
-                    <div class="tech-stack">
-                        <span class="tech-pill">Node.js</span>
-                        <span class="tech-pill">Express.js</span>
-                        <span class="tech-pill">REST APIs</span>
+        <!-- 1. HERO SECTION -->
+        <section class="section hero-section" id="top">
+            <div class="container hero-grid">
+                
+                <!-- Left Hero Column -->
+                <div class="hero-left">
+                    <div class="hero-badge">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                        <span>CRM Administration &bull; Automation &bull; Software Support</span>
                     </div>
-                    <a href="https://github.com/Shadvengeror/comp3095" target="_blank" class="link-text">GitHub Repo &rarr;</a>
-                </div>
 
-                <div class="card project-card">
-                    <h3>Real-Time Chat App</h3>
-                    <p>A real-time, bidirectional communication application featuring server-client messaging and event handling.</p>
-                    <div class="tech-stack">
-                        <span class="tech-pill">Node.js</span>
-                        <span class="tech-pill">Express.js</span>
-                        <span class="tech-pill">Socket.IO</span>
+                    <h1 class="hero-title">
+                        Building smarter workflows.<br>
+                        <span class="accent-text">Solving real technical problems.</span>
+                    </h1>
+
+                    <p class="hero-summary">
+                        Computer Programming and Analysis professional with hands-on experience spanning CRM administration, custom module development, Python & Google Apps Script automations, application troubleshooting, and full-stack software development. Dedicated to turning operational friction into clean, reliable automated solutions.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary">
+                            Explore My Work
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+                        </a>
+                        <a href="resume.html" class="btn btn-secondary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                            Download Resume
+                        </a>
                     </div>
-                    <a href="https://github.com/Shadvengeror/101471907_lab_test1_chat_app" target="_blank" class="link-text">GitHub Repo &rarr;</a>
-                </div>
 
-                <div class="card project-card">
-                    <h3>Full-Stack Group App</h3>
-                    <p>A collaborative development project emphasizing modular architecture, frontend/backend integration, and Git workflows.</p>
-                    <div class="tech-stack">
-                        <span class="tech-pill">JavaScript</span>
-                        <span class="tech-pill">Node.js</span>
-                        <span class="tech-pill">HTML/CSS</span>
-                    </div>
-                    <a href="https://github.com/DistinctDynamo/COMP3074_groupproject" target="_blank" class="link-text">GitHub Repo &rarr;</a>
-                </div>
-
-                <div class="card project-card">
-                    <h3>Gomoku Board Game</h3>
-                    <p>An interactive, turn-based web application implementing the classic "Five in a Row" strategy game with win-condition detection.</p>
-                    <div class="tech-stack">
-                        <span class="tech-pill">JavaScript</span>
-                        <span class="tech-pill">HTML5</span>
-                        <span class="tech-pill">CSS3</span>
-                    </div>
-                    <a href="https://github.com/btran369/COMP2080_Gomoku" target="_blank" class="link-text">GitHub Repo &rarr;</a>
-                </div>
-
-                <div class="card project-card">
-                    <h3>OOP Problem-Solving</h3>
-                    <p>An application demonstrating core Object-Oriented Programming principles, including encapsulation, inheritance, and modular design.</p>
-                    <div class="tech-stack">
-                        <span class="tech-pill">Java</span>
-                        <span class="tech-pill">OOP</span>
-                    </div>
-                    <a href="https://github.com/ArshiaMoradi2003/Comp2152_Project" target="_blank" class="link-text">GitHub Repo &rarr;</a>
-                </div>
-
-                <div class="card project-card">
-                    <h3>DevOps & CI/CD Workflow</h3>
-                    <p>A collaborative project demonstrating disciplined version control, branching strategies, and continuous integration.</p>
-                    <div class="tech-stack">
-                        <span class="tech-pill">Git</span>
-                        <span class="tech-pill">GitHub Actions</span>
-                        <span class="tech-pill">CI/CD</span>
-                    </div>
-                    <a href="https://github.com/DistinctDynamo/COMP3104_Group34_Assignment" target="_blank" class="link-text">GitHub Repo &rarr;</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="capstone" class="section">
-            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 2.5rem;">
-                <div>
-                    <h2 class="section-title" style="margin-bottom: 0;">Capstone Project</h2>
-                </div>
-                <a href="https://soccer-connect.vercel.app/" target="_blank" class="btn btn-primary">View Live Site &rarr;</a>
-            </div>
-            <div class="card capstone-card">
-                <div class="grid grid-2">
-                    <div>
-                        <h3 class="capstone-title"><a href="https://soccer-connect.vercel.app/" target="_blank">SoccerConnect</a></h3>
-                        <p>A full-stack web application built to bring together soccer players, teams, and local resources into one platform. The app enables users to explore community listings, discover other players, and engage with soccer-related content in a centralized environment.</p>
-                        <p><strong>Vision:</strong> To create a seamless user experience by combining social features with practical tools for the soccer community, highlighting full-stack development skills and user-focused design.</p>
-                        
-                        <h4 style="margin-top: 1.5rem; color: var(--text-muted);">Tech Stack</h4>
-                        <div class="tech-stack">
-                            <span class="tech-pill">Next.js</span>
-                            <span class="tech-pill">React</span>
-                            <span class="tech-pill">Node.js</span>
-                            <span class="tech-pill">TypeScript</span>
-                            <span class="tech-pill">Vercel</span>
+                    <div class="hero-meta-bar">
+                        <div class="meta-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <div>
+                                <span class="meta-label">Location</span>
+                                <span class="meta-value">Toronto, ON, Canada</span>
+                            </div>
+                        </div>
+                        <div class="meta-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                            <div>
+                                <span class="meta-label">Education</span>
+                                <span class="meta-value">George Brown (GPA 3.58)</span>
+                            </div>
+                        </div>
+                        <div class="meta-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                            <div>
+                                <span class="meta-label">Email</span>
+                                <a href="mailto:kathanparikh0@gmail.com" class="meta-value link-text">kathanparikh0@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="meta-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <div>
+                                <span class="meta-label">Phone</span>
+                                <a href="tel:4378089998" class="meta-value link-text">(437) 808-9998</a>
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <h4 style="color: var(--text-muted);">Project Documents</h4>
-                        <ul class="doc-list">
-                            <li><a href="assets/F25_T46_Project_Summary.pdf" target="_blank" class="btn btn-secondary doc-btn" style="font-size: 0.85rem; padding: 0.5rem;">📄 Project Summary</a></li>
-                            <li><a href="assets/F25_T46_Project_Vision.pdf" target="_blank" class="btn btn-secondary doc-btn" style="font-size: 0.85rem; padding: 0.5rem;">👁️ Project Vision</a></li>
-                            <li><a href="assets/F25_T46_High_Level_Requirements.pdf" target="_blank" class="btn btn-secondary doc-btn" style="font-size: 0.85rem; padding: 0.5rem;">📋 Business Requirements</a></li>
-                            <li><a href="assets/W26_T46_Project_Plan.pdf" target="_blank" class="btn btn-secondary doc-btn" style="font-size: 0.85rem; padding: 0.5rem;">📅 Project Plan</a></li>
-                            <li><a href="assets/context_diagram.pdf" target="_blank" class="btn btn-secondary doc-btn" style="font-size: 0.85rem; padding: 0.5rem;">⚙️ Analysis & Design</a></li>
-                            <li><a href="assets/UI_Mockups.pdf" target="_blank" class="btn btn-secondary doc-btn" style="font-size: 0.85rem; padding: 0.5rem;">🎨 High-Fidelity Mockups</a></li>
-                            <li><a href="assets/W26_T46_Status_Report_1.pdf" target="_blank" class="btn btn-secondary doc-btn" style="font-size: 0.85rem; padding: 0.5rem;">📊 Status Report 1</a></li>
-                            <li><a href="assets/W26_T46_Status_Report_2.pdf" target="_blank" class="btn btn-secondary doc-btn" style="font-size: 0.85rem; padding: 0.5rem;">📊 Status Report 2</a></li>
-                        </ul>
+                </div>
+
+                <!-- Right Hero Column: Restrained Technical Workflow Visual -->
+                <div class="hero-right">
+                    <div class="hero-visual-card" role="region" aria-label="System Architecture and Workflow Automation Terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-dots" aria-hidden="true">
+                                <span class="terminal-dot dot-red"></span>
+                                <span class="terminal-dot dot-yellow"></span>
+                                <span class="terminal-dot dot-green"></span>
+                            </div>
+                            <span class="terminal-title">kathan@automation-engine:~/crm-modules</span>
+                            <span class="terminal-badge">LIVE ENGINE</span>
+                        </div>
+
+                        <div class="terminal-tabs" role="tablist">
+                            <button class="tab-btn active" data-tab="crm" role="tab" aria-selected="true">
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                                CRM &amp; Python Auto
+                            </button>
+                            <button class="tab-btn" data-tab="support" role="tab" aria-selected="false">
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                                Support &amp; Triage
+                            </button>
+                            <button class="tab-btn" data-tab="fullstack" role="tab" aria-selected="false">
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                                Full-Stack &amp; APIs
+                            </button>
+                        </div>
+
+                        <div class="terminal-body" role="tabpanel">
+                            <div class="workflow-pipeline">
+                                <div class="pipe-step">
+                                    <span class="pipe-num">01</span>
+                                    <div class="pipe-content">
+                                        <div class="pipe-name">
+                                            <span>CRM Platform Webhook Triggered</span>
+                                            <span class="pipe-status">● OK</span>
+                                        </div>
+                                        <div class="pipe-desc">Custom module intercepts student enrollment &amp; administrative event</div>
+                                    </div>
+                                </div>
+                                <div class="pipe-step">
+                                    <span class="pipe-num">02</span>
+                                    <div class="pipe-content">
+                                        <div class="pipe-name">
+                                            <span>Python Automation Pipeline</span>
+                                            <span class="pipe-status">● ACTIVE</span>
+                                        </div>
+                                        <div class="pipe-desc">Validation script cleans input payload, handles edge cases, checks schema</div>
+                                    </div>
+                                </div>
+                                <div class="pipe-step">
+                                    <span class="pipe-num">03</span>
+                                    <div class="pipe-content">
+                                        <div class="pipe-name">
+                                            <span>Google Apps Script Synchronization</span>
+                                            <span class="pipe-status">● SYNCED</span>
+                                        </div>
+                                        <div class="pipe-desc">Syncs student metadata across college databases &amp; internal sheets</div>
+                                    </div>
+                                </div>
+                                <div class="pipe-step">
+                                    <span class="pipe-num">04</span>
+                                    <div class="pipe-content">
+                                        <div class="pipe-name">
+                                            <span>Operational State Verification</span>
+                                            <span class="pipe-status">● COMPLETE</span>
+                                        </div>
+                                        <div class="pipe-desc">Automated notification dispatched; zero manual data entry required</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="terminal-footer-metrics">
+                                <div class="metric-box">
+                                    <div class="metric-val">100%</div>
+                                    <div class="metric-lbl">Data Accuracy</div>
+                                </div>
+                                <div class="metric-box">
+                                    <div class="metric-val">0 manual</div>
+                                    <div class="metric-lbl">Repetitive Steps</div>
+                                </div>
+                                <div class="metric-box">
+                                    <div class="metric-val">&lt; 150ms</div>
+                                    <div class="metric-lbl">Script Runtime</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- 2. ABOUT & PROFESSIONAL SUMMARY -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                        Professional Profile
+                    </span>
+                    <h2 class="section-title">About &amp; Core Capability</h2>
+                    <p class="section-description">
+                        Bridging operations, systems administration, and software development to make organizations run faster and more reliably.
+                    </p>
+                </div>
+
+                <div class="summary-card">
+                    <h3 class="summary-headline">Computer Programming &amp; Analysis Professional</h3>
+                    <p class="summary-paragraph">
+                        Computer Programming and Analysis professional with hands-on experience in CRM administration, application customization, software troubleshooting, and workflow automation. Experienced in developing CRM modules and functions, writing Python scripts and Google Apps Script automations, resolving software bugs, and providing technical support to users. Strong problem-solving, analytical, and communication skills, with the ability to identify inefficiencies and implement practical technical solutions.
+                    </p>
+                    <p class="summary-narrative">
+                        I am a Computer Programming and Analysis professional with a passion for building useful software, improving workflows, and solving technical problems. My experience spans CRM administration, application customization, automation, troubleshooting, and software development. My background in academic coordination and tutoring has strengthened my ability to communicate complex ideas, support users, and collaborate effectively.
+                    </p>
+                </div>
+
+                <div class="opportunities-banner">
+                    <div class="opp-title">Target Roles &amp; Areas of Direct Contribution</div>
+                    <div class="opp-grid">
+                        <div class="opp-card">
+                            <div class="opp-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            </div>
+                            <div class="opp-content">
+                                <h4>CRM Administration</h4>
+                                <p>Platform management, custom module creation, function development, and tailored workflows.</p>
+                            </div>
+                        </div>
+
+                        <div class="opp-card">
+                            <div class="opp-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                            </div>
+                            <div class="opp-content">
+                                <h4>Application Support</h4>
+                                <p>Diagnosing root causes, login and access issues, bug fixing, and rapid technical resolution.</p>
+                            </div>
+                        </div>
+
+                        <div class="opp-card">
+                            <div class="opp-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                            </div>
+                            <div class="opp-content">
+                                <h4>Software Development</h4>
+                                <p>Building robust REST APIs, modern web interfaces, and maintainable object-oriented code.</p>
+                            </div>
+                        </div>
+
+                        <div class="opp-card">
+                            <div class="opp-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                            </div>
+                            <div class="opp-content">
+                                <h4>Workflow Automation</h4>
+                                <p>Python scripting and Google Apps Script to eliminate repetitive tasks and errors.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="contact" class="section">
-            <h2 class="section-title">Let's Connect</h2>
-            <p class="section-subtitle">I'm currently looking for new opportunities. Whether you have a question, a project idea, or just want to say hi, my inbox is always open!</p>
-            
-            <div class="card" style="text-align: center; padding: 4rem 2rem;">
-                <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: var(--text-primary);">Get In Touch</h3>
-                <p style="margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">I am actively seeking Full-Stack Developer roles and collaborative projects. Feel free to reach out, and I'll get back to you as soon as possible.</p>
-                
-                <a href="mailto:kathanparikh0@gmail.com" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2.5rem;">Say Hello</a>
-                
-                <div style="margin-top: 2.5rem; display: flex; justify-content: center; gap: 2rem;">
-                    <a href="https://github.com/Shadvengeror" target="_blank" class="link-text">GitHub Profile &rarr;</a>
-                    <a href="https://www.linkedin.com/in/kathan-parikh-7a26a5268/?skipRedirect=true" target="_blank" class="link-text">LinkedIn Profile &rarr;</a>
+
+        <hr class="section-divider">
+
+        <!-- 3. TECHNICAL SKILLS -->
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                        Technical Competencies
+                    </span>
+                    <h2 class="section-title">Organized Skill Matrix</h2>
+                    <p class="section-description">
+                        Targeted capabilities grounded directly in hands-on production administration, automation scripting, and software coursework.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    
+                    <!-- 1. Programming and Scripting -->
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                            </div>
+                            <h3 class="skill-card-title">Programming &amp; Scripting</h3>
+                        </div>
+                        <ul class="skill-tags-list">
+                            <li class="skill-tag">Python</li>
+                            <li class="skill-tag">Google Apps Script</li>
+                            <li class="skill-tag">Script development</li>
+                            <li class="skill-tag">Workflow automation</li>
+                        </ul>
+                    </div>
+
+                    <!-- 2. CRM Administration -->
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            </div>
+                            <h3 class="skill-card-title">CRM Administration</h3>
+                        </div>
+                        <ul class="skill-tags-list">
+                            <li class="skill-tag">CRM management</li>
+                            <li class="skill-tag">Module creation</li>
+                            <li class="skill-tag">Function development</li>
+                            <li class="skill-tag">Application customization</li>
+                        </ul>
+                    </div>
+
+                    <!-- 3. Application Support -->
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                            </div>
+                            <h3 class="skill-card-title">Application Support</h3>
+                        </div>
+                        <ul class="skill-tags-list">
+                            <li class="skill-tag">Bug fixing</li>
+                            <li class="skill-tag">Troubleshooting</li>
+                            <li class="skill-tag">Login &amp; access issues</li>
+                            <li class="skill-tag">Technical issue resolution</li>
+                        </ul>
+                    </div>
+
+                    <!-- 4. Automation -->
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                            </div>
+                            <h3 class="skill-card-title">Automation</h3>
+                        </div>
+                        <ul class="skill-tags-list">
+                            <li class="skill-tag">Python scripting</li>
+                            <li class="skill-tag">Google Apps Script</li>
+                            <li class="skill-tag">Process automation</li>
+                            <li class="skill-tag">Repetitive task automation</li>
+                        </ul>
+                    </div>
+
+                    <!-- 5. Data Management -->
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                            </div>
+                            <h3 class="skill-card-title">Data Management</h3>
+                        </div>
+                        <ul class="skill-tags-list">
+                            <li class="skill-tag">Microsoft Excel</li>
+                            <li class="skill-tag">Data maintenance</li>
+                            <li class="skill-tag">Data accuracy</li>
+                        </ul>
+                    </div>
+
+                    <!-- 6. Professional Skills -->
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            </div>
+                            <h3 class="skill-card-title">Professional Skills</h3>
+                        </div>
+                        <ul class="skill-tags-list">
+                            <li class="skill-tag">Problem-solving</li>
+                            <li class="skill-tag">Analytical thinking</li>
+                            <li class="skill-tag">Communication</li>
+                            <li class="skill-tag">User support</li>
+                            <li class="skill-tag">Teamwork</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- 4. PROFESSIONAL EXPERIENCE (MAJOR PRIORITY) -->
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                        Career Timeline
+                    </span>
+                    <h2 class="section-title">Professional Experience</h2>
+                    <p class="section-description">
+                        Demonstrated impact in CRM systems administration, workflow automation scripting, software issue resolution, and technical instruction.
+                    </p>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-line" aria-hidden="true"></div>
+
+                    <!-- ROLE 1: Citi College - Computer Programmer (PRIMARY FEATURED ROLE) -->
+                    <article class="timeline-card primary-role">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="role-box">
+                            <div class="role-top-row">
+                                <div class="role-title-wrap">
+                                    <h3>
+                                        Computer Programmer &mdash; <span class="company-tag">Citi College</span>
+                                        <span class="featured-role-badge">Primary Technical Role</span>
+                                    </h3>
+                                </div>
+                                <span class="role-meta-badge">Canada | June 2026 – Present</span>
+                            </div>
+
+                            <ul class="role-bullets">
+                                <li>Manage and maintain the college's CRM platform to support administrative and operational processes.</li>
+                                <li>Develop and customize CRM modules and functions to meet business and operational requirements.</li>
+                                <li>Write Python scripts to automate repetitive tasks and streamline operational workflows.</li>
+                                <li>Develop Google Apps Script automations to improve efficiency and reduce manual work.</li>
+                                <li>Troubleshoot and resolve software bugs, application glitches, and functional issues.</li>
+                                <li>Assist students with login problems, access issues, and other technical difficulties.</li>
+                                <li>Maintain and manage operational data using Microsoft Excel, ensuring accuracy and consistency.</li>
+                                <li>Identify opportunities to improve existing processes through scripting, automation, and application enhancements.</li>
+                            </ul>
+
+                            <div class="role-tech-pills">
+                                <span class="tech-chip">CRM Management</span>
+                                <span class="tech-chip">Python Scripting</span>
+                                <span class="tech-chip">Google Apps Script</span>
+                                <span class="tech-chip">Application Customization</span>
+                                <span class="tech-chip">Bug Fixing</span>
+                                <span class="tech-chip">Microsoft Excel</span>
+                                <span class="tech-chip">User Support</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ROLE 2: Citi College - Academic Coordinator -->
+                    <article class="timeline-card">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="role-box">
+                            <div class="role-top-row">
+                                <div class="role-title-wrap">
+                                    <h3>Academic Coordinator &mdash; <span class="company-tag">Citi College</span></h3>
+                                </div>
+                                <span class="role-meta-badge">Canada | June 2025 – April 2026</span>
+                            </div>
+
+                            <ul class="role-bullets">
+                                <li>Coordinated academic and administrative activities to support daily college operations.</li>
+                                <li>Communicated with students and staff to address questions, resolve issues, and facilitate smooth operations.</li>
+                                <li>Maintained records and supported accurate handling of student information.</li>
+                                <li>Assisted with administrative workflows, scheduling, and coordination of academic activities.</li>
+                            </ul>
+
+                            <div class="role-tech-pills">
+                                <span class="tech-chip">Operations Coordination</span>
+                                <span class="tech-chip">Student Information Handling</span>
+                                <span class="tech-chip">Workflow Scheduling</span>
+                                <span class="tech-chip">Cross-Functional Communication</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ROLE 3: Bookish Tutors - CS Tutor -->
+                    <article class="timeline-card">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="role-box">
+                            <div class="role-top-row">
+                                <div class="role-title-wrap">
+                                    <h3>Computer Science Tutor &mdash; <span class="company-tag">Bookish Tutors</span></h3>
+                                </div>
+                                <span class="role-meta-badge">Canada | May 2024 – Present</span>
+                            </div>
+
+                            <ul class="role-bullets">
+                                <li>Teach computer science concepts and programming fundamentals to students with varying levels of experience.</li>
+                                <li>Help students understand programming logic, solve coding problems, and debug code.</li>
+                                <li>Explain technical concepts clearly and provide individualized guidance based on student needs.</li>
+                            </ul>
+
+                            <div class="role-tech-pills">
+                                <span class="tech-chip">Programming Logic</span>
+                                <span class="tech-chip">Code Debugging</span>
+                                <span class="tech-chip">Technical Explanation</span>
+                                <span class="tech-chip">Mentorship</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ROLE 4: ALS Tutoring - CS Tutor -->
+                    <article class="timeline-card">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="role-box">
+                            <div class="role-top-row">
+                                <div class="role-title-wrap">
+                                    <h3>Computer Science Tutor &mdash; <span class="company-tag">ALS Tutoring</span></h3>
+                                </div>
+                                <span class="role-meta-badge">Canada | September 2024 – December 2024</span>
+                            </div>
+
+                            <ul class="role-bullets">
+                                <li>Helped students understand computer science concepts and complete programming exercises.</li>
+                                <li>Guided students through logical problem-solving, programming fundamentals, and technical challenges.</li>
+                            </ul>
+
+                            <div class="role-tech-pills">
+                                <span class="tech-chip">Problem Solving</span>
+                                <span class="tech-chip">Programming Exercises</span>
+                                <span class="tech-chip">CS Fundamentals</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ROLE 5: Milestone - IELTS Tutor -->
+                    <article class="timeline-card">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="role-box">
+                            <div class="role-top-row">
+                                <div class="role-title-wrap">
+                                    <h3>IELTS Tutor &mdash; <span class="company-tag">Milestone</span></h3>
+                                </div>
+                                <span class="role-meta-badge">India | July 2022 – July 2023</span>
+                            </div>
+
+                            <ul class="role-bullets">
+                                <li>Delivered IELTS instruction tailored to individual student learning needs and goals.</li>
+                                <li>Developed strong communication, presentation, and instructional skills.</li>
+                            </ul>
+
+                            <div class="role-tech-pills">
+                                <span class="tech-chip">Instructional Delivery</span>
+                                <span class="tech-chip">Communication</span>
+                                <span class="tech-chip">Presentation</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ROLE 6: Freelance - Mathematics Tutor -->
+                    <article class="timeline-card">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="role-box">
+                            <div class="role-top-row">
+                                <div class="role-title-wrap">
+                                    <h3>Mathematics Tutor &mdash; <span class="company-tag">Freelance</span></h3>
+                                </div>
+                                <span class="role-meta-badge">India | July 2022 – July 2023</span>
+                            </div>
+
+                            <ul class="role-bullets">
+                                <li>Provided individualized mathematics instruction and helped students develop analytical and problem-solving skills.</li>
+                            </ul>
+
+                            <div class="role-tech-pills">
+                                <span class="tech-chip">Analytical Thinking</span>
+                                <span class="tech-chip">Mathematical Logic</span>
+                                <span class="tech-chip">Individualized Coaching</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- 5. SELECTED PROJECTS -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                        Software Engineering
+                    </span>
+                    <h2 class="section-title">Selected Projects</h2>
+                    <p class="section-description">
+                        Full-stack web applications, RESTful microservices, real-time event systems, and automated CI/CD workflows.
+                    </p>
+                </div>
+
+                <!-- FEATURED CASE STUDY: SOCCERCONNECT CAPSTONE -->
+                <article class="capstone-featured-card">
+                    <span class="capstone-badge">Featured Capstone Project</span>
+                    <div class="capstone-grid">
+                        <div>
+                            <h3 class="capstone-title">SoccerConnect</h3>
+                            <p class="capstone-description">
+                                A comprehensive full-stack web application designed to bring soccer players, teams, and local community resources together into a single unified platform. The app enables users to explore community listings, discover other players, and engage with soccer-related content in a centralized environment.
+                            </p>
+                            <div class="capstone-vision">
+                                <strong>Vision &amp; Architecture:</strong> To create a seamless user experience by combining social features with practical tools for the soccer community, highlighting end-to-end full-stack development skills and user-focused design.
+                            </div>
+
+                            <div class="tech-pills">
+                                <span class="tech-pill">Next.js</span>
+                                <span class="tech-pill">React</span>
+                                <span class="tech-pill">Node.js</span>
+                                <span class="tech-pill">TypeScript</span>
+                                <span class="tech-pill">Vercel</span>
+                            </div>
+
+                            <div class="capstone-actions">
+                                <a href="https://soccer-connect.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    View Live Application
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Capstone Document Library -->
+                        <div>
+                            <div class="docs-library-header">
+                                <span>Official Capstone Engineering Documents</span>
+                                <span class="mono-text" style="font-size: 0.75rem; color: var(--accent);">8 PDF Artifacts</span>
+                            </div>
+                            <ul class="docs-grid">
+                                <li>
+                                    <a href="assets/F25_T46_Project_Summary.pdf" target="_blank" rel="noopener noreferrer" class="doc-link-item">
+                                        <div class="doc-title-part">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                                            <span>Project Summary</span>
+                                        </div>
+                                        <span class="doc-ext">PDF &bull; 388KB</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="assets/F25_T46_Project_Vision.pdf" target="_blank" rel="noopener noreferrer" class="doc-link-item">
+                                        <div class="doc-title-part">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                                            <span>Project Vision</span>
+                                        </div>
+                                        <span class="doc-ext">PDF &bull; 626KB</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="assets/F25_T46_High_Level_Requirements.pdf" target="_blank" rel="noopener noreferrer" class="doc-link-item">
+                                        <div class="doc-title-part">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                                            <span>Business Requirements</span>
+                                        </div>
+                                        <span class="doc-ext">PDF &bull; 54KB</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="assets/W26_T46_Project_Plan.pdf" target="_blank" rel="noopener noreferrer" class="doc-link-item">
+                                        <div class="doc-title-part">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                            <span>Project Plan</span>
+                                        </div>
+                                        <span class="doc-ext">PDF &bull; 728KB</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="assets/context_diagram.pdf" target="_blank" rel="noopener noreferrer" class="doc-link-item">
+                                        <div class="doc-title-part">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                                            <span>Analysis &amp; Design (Context Diagram)</span>
+                                        </div>
+                                        <span class="doc-ext">PDF &bull; 28KB</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="assets/UI_Mockups.pdf" target="_blank" rel="noopener noreferrer" class="doc-link-item">
+                                        <div class="doc-title-part">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+                                            <span>High-Fidelity UI Mockups</span>
+                                        </div>
+                                        <span class="doc-ext">PDF &bull; 276KB</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="assets/W26_T46_Status_Report_1.pdf" target="_blank" rel="noopener noreferrer" class="doc-link-item">
+                                        <div class="doc-title-part">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                                            <span>Status Report 1</span>
+                                        </div>
+                                        <span class="doc-ext">PDF &bull; 218KB</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="assets/W26_T46_Status_Report_2.pdf" target="_blank" rel="noopener noreferrer" class="doc-link-item">
+                                        <div class="doc-title-part">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                                            <span>Status Report 2</span>
+                                        </div>
+                                        <span class="doc-ext">PDF &bull; 212KB</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ENGINEERING PROJECTS GRID -->
+                <div class="projects-grid">
+                    
+                    <!-- 1. Food Management API -->
+                    <article class="project-card">
+                        <div class="project-preview" aria-hidden="true">
+                            <div class="preview-grid-bg"></div>
+                            <div class="preview-content">
+                                <span class="preview-badge">REST API SERVICE</span>
+                                <div class="preview-code-line"><span class="preview-symbol">GET</span> /api/v1/recipes/inventory</div>
+                                <div class="preview-code-line"><span class="preview-symbol">POST</span> /api/v1/waste-reduction/log</div>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Food Management API</h3>
+                            <p class="project-desc">
+                                A backend-focused RESTful API for managing recipes, grocery items, and reducing food waste through automated inventory logic and structured data endpoints.
+                            </p>
+                            <div class="tech-pills">
+                                <span class="tech-pill">Node.js</span>
+                                <span class="tech-pill">Express.js</span>
+                                <span class="tech-pill">REST APIs</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Shadvengeror/comp3095" target="_blank" rel="noopener noreferrer" class="link-btn">
+                                    <span>GitHub Repository</span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 2. Real-Time Chat App -->
+                    <article class="project-card">
+                        <div class="project-preview" aria-hidden="true">
+                            <div class="preview-grid-bg"></div>
+                            <div class="preview-content">
+                                <span class="preview-badge">WEBSOCKET ENGINE</span>
+                                <div class="preview-code-line"><span class="preview-symbol">WS</span> socket.emit('join_room', {id})</div>
+                                <div class="preview-code-line"><span class="preview-symbol">OK</span> 200 message_relayed &bull; 4ms</div>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Real-Time Chat App</h3>
+                            <p class="project-desc">
+                                A real-time communication application featuring server-client bi-directional messaging, rooms, broadcast dispatching, and robust event lifecycle handling.
+                            </p>
+                            <div class="tech-pills">
+                                <span class="tech-pill">Node.js</span>
+                                <span class="tech-pill">Express.js</span>
+                                <span class="tech-pill">Socket.IO</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Shadvengeror/101471907_lab_test1_chat_app" target="_blank" rel="noopener noreferrer" class="link-btn">
+                                    <span>GitHub Repository</span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 3. Full-Stack Group App -->
+                    <article class="project-card">
+                        <div class="project-preview" aria-hidden="true">
+                            <div class="preview-grid-bg"></div>
+                            <div class="preview-content">
+                                <span class="preview-badge">MODULAR FULL-STACK</span>
+                                <div class="preview-code-line"><span class="preview-symbol">ARCH</span> Controller &rarr; Service &rarr; View</div>
+                                <div class="preview-code-line"><span class="preview-symbol">GIT</span> Collaborative Branch Workflow</div>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Full-Stack Group App</h3>
+                            <p class="project-desc">
+                                A collaborative development project emphasizing modular software architecture, seamless frontend/backend integration, and synchronized Git workflows.
+                            </p>
+                            <div class="tech-pills">
+                                <span class="tech-pill">JavaScript</span>
+                                <span class="tech-pill">Node.js</span>
+                                <span class="tech-pill">HTML5</span>
+                                <span class="tech-pill">CSS3</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/DistinctDynamo/COMP3074_groupproject" target="_blank" rel="noopener noreferrer" class="link-btn">
+                                    <span>GitHub Repository</span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 4. Gomoku Board Game -->
+                    <article class="project-card">
+                        <div class="project-preview" aria-hidden="true">
+                            <div class="preview-grid-bg"></div>
+                            <div class="preview-content">
+                                <span class="preview-badge">GAME ALGORITHM</span>
+                                <div class="preview-code-line"><span class="preview-symbol">GRID</span> 15x15 Matrix Evaluation</div>
+                                <div class="preview-code-line"><span class="preview-symbol">SCAN</span> 5-in-a-row Vector Detection</div>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Gomoku Board Game</h3>
+                            <p class="project-desc">
+                                An interactive turn-based implementation of the classic Five in a Row strategy game featuring rapid directional win-condition calculation and clean UI states.
+                            </p>
+                            <div class="tech-pills">
+                                <span class="tech-pill">JavaScript</span>
+                                <span class="tech-pill">HTML5</span>
+                                <span class="tech-pill">CSS3</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/btran369/COMP2080_Gomoku" target="_blank" rel="noopener noreferrer" class="link-btn">
+                                    <span>GitHub Repository</span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 5. OOP Problem-Solving -->
+                    <article class="project-card">
+                        <div class="project-preview" aria-hidden="true">
+                            <div class="preview-grid-bg"></div>
+                            <div class="preview-content">
+                                <span class="preview-badge">OBJECT-ORIENTED DESIGN</span>
+                                <div class="preview-code-line"><span class="preview-symbol">JAVA</span> class Manager extends System</div>
+                                <div class="preview-code-line"><span class="preview-symbol">OOP</span> Polymorphism &bull; Encapsulation</div>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">OOP Problem-Solving</h3>
+                            <p class="project-desc">
+                                An engineering application demonstrating object-oriented programming principles, including strict encapsulation, hierarchical inheritance, and modular design.
+                            </p>
+                            <div class="tech-pills">
+                                <span class="tech-pill">Java</span>
+                                <span class="tech-pill">OOP Architecture</span>
+                                <span class="tech-pill">Algorithms</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/ArshiaMoradi2003/Comp2152_Project" target="_blank" rel="noopener noreferrer" class="link-btn">
+                                    <span>GitHub Repository</span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 6. DevOps & CI/CD Workflow -->
+                    <article class="project-card">
+                        <div class="project-preview" aria-hidden="true">
+                            <div class="preview-grid-bg"></div>
+                            <div class="preview-content">
+                                <span class="preview-badge">AUTOMATED PIPELINE</span>
+                                <div class="preview-code-line"><span class="preview-symbol">ACTION</span> .github/workflows/ci.yml</div>
+                                <div class="preview-code-line"><span class="preview-symbol">PASS</span> 24/24 Tests &bull; Build Green</div>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">DevOps &amp; CI/CD Workflow</h3>
+                            <p class="project-desc">
+                                A collaborative project demonstrating disciplined version control, branch protection strategies, automated continuous integration tests, and GitHub Actions pipelines.
+                            </p>
+                            <div class="tech-pills">
+                                <span class="tech-pill">Git</span>
+                                <span class="tech-pill">GitHub Actions</span>
+                                <span class="tech-pill">CI/CD</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/DistinctDynamo/COMP3104_Group34_Assignment" target="_blank" rel="noopener noreferrer" class="link-btn">
+                                    <span>GitHub Repository</span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- 6. EDUCATION, CERTIFICATIONS & RECOMMENDATION -->
+        <section class="section" id="education">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                        Academic Background &amp; Credentials
+                    </span>
+                    <h2 class="section-title">Education &amp; Endorsements</h2>
+                    <p class="section-description">
+                        Academic degrees, verified health and safety licensures, and faculty recommendations.
+                    </p>
+                </div>
+
+                <div class="credentials-grid">
+                    
+                    <!-- Left: Education Column -->
+                    <div class="edu-card">
+                        <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1.75rem; color: var(--text-primary);">
+                            Formal Education
+                        </h3>
+
+                        <ul class="edu-timeline">
+                            <!-- George Brown College -->
+                            <li class="edu-item featured">
+                                <div class="edu-school">George Brown College</div>
+                                <div class="edu-degree">Advanced Diploma in Computer Programming and Analysis</div>
+                                <div class="edu-meta">
+                                    <span>Toronto, Ontario, Canada</span>
+                                    <span>&bull;</span>
+                                    <span>September 2023 – Present</span>
+                                    <span class="gpa-pill">GPA: 3.58 / 4.00</span>
+                                </div>
+                            </li>
+
+                            <!-- Aradhana Vidyavihar -->
+                            <li class="edu-item">
+                                <div class="edu-school">Aradhana Vidyavihar</div>
+                                <div class="edu-degree">High School Diploma</div>
+                                <div class="edu-meta">
+                                    <span>India</span>
+                                    <span>&bull;</span>
+                                    <span>June 2020 – May 2022</span>
+                                </div>
+                            </li>
+
+                            <!-- Mount Carmel High School -->
+                            <li class="edu-item">
+                                <div class="edu-school">Mount Carmel High School</div>
+                                <div class="edu-degree">Primary and Secondary Education</div>
+                                <div class="edu-meta">
+                                    <span>India</span>
+                                    <span>&bull;</span>
+                                    <span>June 2008 – May 2020</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Right: Certifications & Recommendation -->
+                    <div class="cert-section-wrap">
+                        
+                        <!-- Dedicated Certifications -->
+                        <div class="cert-card">
+                            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1.25rem; color: var(--text-primary);">
+                                Certifications &amp; Licences
+                            </h3>
+
+                            <ul class="cert-list">
+                                <li class="cert-item">
+                                    <div class="cert-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                                    </div>
+                                    <span>First Aid / CPR Certification</span>
+                                </li>
+                                <li class="cert-item">
+                                    <div class="cert-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                    </div>
+                                    <span>Security Guard Licence</span>
+                                </li>
+                                <li class="cert-item">
+                                    <div class="cert-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    </div>
+                                    <span>Forklift Licence</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Academic Recommendation -->
+                        <div class="recommendation-card" id="recommendation">
+                            <div class="rec-quote-mark">&ldquo;</div>
+                            <blockquote class="rec-text">
+                                &ldquo;Kathan completed the Technology Mathematics course with a total score of 100% (A+)... assisting me in the delivery of complex mathematical topics. I am thoroughly convinced Kathan would be a great addition.&rdquo;
+                            </blockquote>
+                            <div class="rec-attribution">
+                                <div class="rec-author">
+                                    <strong>Zack Bajin</strong>
+                                    <span>Professor, George Brown College</span>
+                                </div>
+                                <a href="assets/Letter_of_Recommendation_Bajin.pdf" target="_blank" rel="noopener noreferrer" class="link-btn">
+                                    <span>View Official Letter</span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- 7. CONTACT SECTION -->
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="contact-card">
+                    <h2 class="contact-headline">
+                        Have an opportunity or a technical problem to solve? Let's connect.
+                    </h2>
+                    <p class="contact-sub">
+                        I am actively seeking relevant technical opportunities in CRM administration, application support, software development, and workflow automation. Whether you have an open position, an operational bottleneck, or a project in mind, I'd welcome the chance to speak.
+                    </p>
+
+                    <div class="contact-methods-grid">
+                        
+                        <!-- Email Card -->
+                        <div class="contact-method-card">
+                            <div class="method-info">
+                                <div class="method-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                                </div>
+                                <div>
+                                    <div class="method-label">Direct Email</div>
+                                    <a href="mailto:kathanparikh0@gmail.com" class="method-value">kathanparikh0@gmail.com</a>
+                                </div>
+                            </div>
+                            <button class="copy-btn" data-copy="kathanparikh0@gmail.com" aria-label="Copy email address">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                Copy
+                            </button>
+                        </div>
+
+                        <!-- Phone Card -->
+                        <div class="contact-method-card">
+                            <div class="method-info">
+                                <div class="method-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                </div>
+                                <div>
+                                    <div class="method-label">Direct Phone</div>
+                                    <a href="tel:4378089998" class="method-value">(437) 808-9998</a>
+                                </div>
+                            </div>
+                            <button class="copy-btn" data-copy="(437) 808-9998" aria-label="Copy phone number">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                Copy
+                            </button>
+                        </div>
+
+                        <!-- Location Card -->
+                        <div class="contact-method-card">
+                            <div class="method-info">
+                                <div class="method-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                </div>
+                                <div>
+                                    <div class="method-label">Based In</div>
+                                    <div class="method-value">Toronto, ON, Canada</div>
+                                </div>
+                            </div>
+                            <span class="mono-text" style="font-size: 0.75rem; color: var(--accent);">EST / EDT</span>
+                        </div>
+
+                    </div>
+
+                    <div class="contact-social-bar">
+                        <div class="social-links">
+                            <a href="https://github.com/Shadvengeror" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                <span>GitHub &bull; Shadvengeror</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/kathan-parikh-7a26a5268/?skipRedirect=true" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                <span>LinkedIn &bull; Kathan Parikh</span>
+                            </a>
+                        </div>
+
+                        <div class="action-buttons">
+                            <a href="resume.html" class="btn btn-outline-accent">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                                Printable Resume &amp; PDF
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <footer>
+    <!-- FOOTER -->
+    <footer class="site-footer">
         <div class="container footer-content">
-            <p>&copy; 2026 Kathan Parikh. Developed for COMP3078.</p>
-            <div class="footer-links">
-                <a href="mailto:kathanparikh0@gmail.com">kathanparikh0@gmail.com</a>
+            <div>
+                <div class="footer-brand">&copy; <span id="current-year">2026</span> Kathan Parikh. All rights reserved.</div>
+                <div class="footer-sub">Designed &amp; engineered for production performance and accessibility.</div>
+            </div>
+            <div class="footer-meta">
+                <a href="https://shadvengeror.github.io/portfolio/" class="link-btn" style="color: var(--text-tertiary);">
+                    <span>Hosted on GitHub Pages</span>
+                </a>
             </div>
         </div>
     </footer>
 
+    <!-- Toast Notification for Clipboard -->
+    <div id="toast" class="toast-notice" role="status" aria-live="polite"></div>
+
+    <!-- Script -->
+    <script src="script.js?v=4.0"></script>
 </body>
 </html>
